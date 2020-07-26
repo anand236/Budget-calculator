@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="form-row d-flex justify-content-center">
+        <div class="form-group col-md-6">
+            <h1 class="text-primary">Income</h1>
+            <div class="budgetItem" *ngFor = 'let item of budgetItems'>
+                <app-expense-output *ngIf = 'item.amount >= 0' [item]="item" (xBtnEmit) ='emitTwo(item)' ></app-expense-output>
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <h1 class="text-danger">Expenses</h1>
+            <div *ngFor = 'let item of budgetItems'>
+                <app-expense-output *ngIf = 'item.amount<0' [item]="item" (xBtnEmit) ='emitTwo(item)'></app-expense-output>
+            </div>
+        </div>
+    </div>
+</div>

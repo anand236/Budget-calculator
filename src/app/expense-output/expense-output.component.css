@@ -1,0 +1,49 @@
+.root{
+    display: flex;
+    position: relative;
+}
+.rootexpense{
+    cursor: pointer;
+    display: flex;
+   
+}
+.xBtn{
+    position: absolute;
+    left: -10px;
+    top: -17px;
+    /* background-color: crimson; */
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 1px;
+    opacity: 0.2;
+}
+.xBtn:hover{
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+
+
+
+.income p{
+    color: chartreuse;
+}
+
+.income .amount{
+    color: chartreuse;
+}
+
+
+.expense p{
+    color: red;
+}
+
+.expense .amount{
+    color: red;
+}

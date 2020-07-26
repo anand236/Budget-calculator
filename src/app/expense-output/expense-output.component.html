@@ -1,0 +1,12 @@
+<div class="root">
+    <div class="rootexpense"  [ngClass]='{"income":item.amount>=0,"expense":item.amount<0}'>
+        <div class="desc">  
+            <h2 class=" p-0 m-0" >{{item.description}}</h2>
+        </div>
+        <div class="amount">    
+            <h2 class="ml-5 amount" style="background-color: black;border-radius: 5px;">{{item.amount}}</h2>
+        </div>
+        <div >
+           <button type="button" class=" xBtn btn btn-danger" (click)="xBtnClicked()">X</button></div>
+    </div>
+</div>
